@@ -1,0 +1,11 @@
+@import "../../../../scss/colors.scss";
+
+.required {
+  color: $orange-for-sure;
+}
+
+.select-all-checkbox {
+  color: $almost-black;
+  font-weight: 600;
+  margin-bottom: 17px;
+}

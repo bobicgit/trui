@@ -1,0 +1,13 @@
+<div class="main">
+    <div class="logo" >
+        <img src="assets/images/logo.png" alt="logo">
+    </div>
+    <mat-card class="form-card">
+        <mat-card-header>
+            <mat-card-title>{{'form.header.title' | translate}}</mat-card-title>
+            <mat-card-subtitle>{{'form.header.subtitle' | translate}}</mat-card-subtitle>
+        </mat-card-header>
+        <app-form [config]="formConfig" (submitHandler)="onSubmit($event)"></app-form>
+    </mat-card>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,17 @@
+<div [formGroup]="form" >
+    <mat-checkbox class="select-all-checkbox"
+                  [checked]="allComplete"
+                  [indeterminate]="someComplete()"
+                  (change)="setAll($event.checked)">
+        {{'form.checkbox.selectAll' | translate}}
+    </mat-checkbox>
+    <div *ngFor="let box of checkboxes">
+        <mat-checkbox [formControlName]="box.name"
+                    [required]="requiredMap[box.name]"
+                    (change)="updateAllComplete()">
+            {{ box.label }}
+            <span *ngIf="requiredMap[box.name]" class="required" aria-required="true"> * </span>
+        </mat-checkbox>
+    </div>
+</div>
+

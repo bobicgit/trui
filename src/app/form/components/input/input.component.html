@@ -1,0 +1,17 @@
+<mat-form-field
+    [formGroup]="form"
+    appearance="fill"
+    hideRequiredMarker="false"
+    class="full-width"
+    [ngClass]="field.inputType"
+>
+    <mat-label>{{field.label}}</mat-label>
+    <input
+        matInput
+        [formControlName]="field.name"
+        [type]="field.inputType"
+        [name]="field.name"
+        [placeholder]="field.placeholder"
+        [required]="required"
+    />
+</mat-form-field>

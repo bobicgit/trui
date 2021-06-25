@@ -1,0 +1,7 @@
+<form class="app-form" [formGroup]="form" (submit)="onSubmit($event)">
+    <ng-container *ngFor="let field of fieldsConfig;" appDynamicField [field]="field" [form]="form"></ng-container>
+    <app-acceptance-checkboxes [form]="form"></app-acceptance-checkboxes>
+    <section class="actions">
+        <button class="submit" mat-flat-button [disabled]="!form.valid" type="submit">Wyślij Wiadomość</button>
+    </section>
+</form>

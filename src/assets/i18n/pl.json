@@ -1,0 +1,13 @@
+{
+    "form": {
+        "header": {
+            "title": "Wypełnij formularz",
+            "subtitle": "Skontaktujemy się z Tobą najszybciej jak to będzie możliwe."
+        },
+        "checkbox": {
+            "selectAll": "Zaznacz wszystkie zgody",
+            "data-permission": "Wyrażam zgodę na przetwarzanie moich danych osobowych podanych przeze mnie w powyższym formularzu w celu kontaktowym.",
+            "contact-permission": "Wyrażam zgodę na kontakt telefoniczny w sprawach marketingowych"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import "../../scss/colors.scss";
+
+
+.app-form,
+.actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.actions {
+  align-items: center;
+}
+
+.submit {
+  height: 60px;
+  width: 240px;
+  background-color: $lime-green;
+  border-radius: 30px;
+  color: $white;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 40px;
+}

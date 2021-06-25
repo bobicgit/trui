@@ -1,0 +1,19 @@
+@import "../../../../scss/colors.scss";
+
+.custom-radio-wrapper {
+  height: 73px;
+  background-color: $light-grey;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+mat-label {
+  padding: 27px 0 27px 20px;
+  font-weight: 700;
+  max-height: 73px;
+  font-size: 12px;
+}

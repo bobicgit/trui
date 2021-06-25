@@ -1,0 +1,16 @@
+
+<div [formGroup]="form" class="custom-radio-wrapper">
+    <mat-label>{{field.label}}</mat-label>
+    <mat-radio-group [formControlName]="field.name">
+        <mat-radio-button *ngFor="let item of field.options" [value]="item.value">{{item.label}}</mat-radio-button>
+    </mat-radio-group>
+    <!-- <div *ngFor="let option of field.options" class="custom-control custom-radio">
+        <input
+            type="radio"
+            class="custom-control-input"
+            [value]="option.value"
+            [name]="field.name"
+            [formControlName]="field.name" />
+        <label class="custom-control-label" [for]="option.value">{{option.label}}</label>
+    </div> -->
+</div>
